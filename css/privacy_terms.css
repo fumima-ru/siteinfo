@@ -5,96 +5,32 @@ html {
 }
 
 body {
-  color: #222222;
-  font-size: 1rem;
-  /*font-family: ;*/
-  width: 100%;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-}
-
-img {
-  max-width: 100%;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  color: #050507;
-  text-decoration: none;
-}
-
-.flex-center {
-  display: flex;
-}
-
-/* p {
-  text-align: center;
-} */
-
-/* ---------------------------------------
-   Global Styles for portfolio_steps.html
---------------------------------------- */
-
-
-/* ---------------------------------------
-   Section-specific Styles
---------------------------------------- */
-
-
-/* ---------------------------------------
-   Responsive Styles
---------------------------------------- */
-
-/* --.header----------------------- */
-/* --ハンバーガーメニュー------------ */
-/* --.mainvisual------------------- */
-/* --.information------------------ */
-/* --.access----------------------- */
-/* --.contact---------------------- */
-/* --.footer----------------------- */
-
-/* --レスポンシブ------------------- */
-/* Bootstrapのデフォルトのブレークポイント */
-/* 下記を元にpaddingで調整*/
-/*@media (max-width: 576px) { ... } /* Small devices */
-
-/*@media (max-width: 768px) { ... } /* Medium devices */
-
-/*@media (max-width: 992px) { ... } /* Large devices */
-
-/*@media (max-width: 1200px) { ... } /* Extra large devices */
-
-
-
-/* まず、htmlにcustom-containerクラスを作成しておくという理解で良いですか？
-@media (min-width: 1200px) {
-    .container {
-        max-width: 720px;
-    }
-
-    .custom-component {
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-}*/
-
-/* --レスポンシブ.information------- */
-/* --レスポンシブ.access------------ */
-/* --レスポンシブ.contact----------- */
-/* --レスポンシブ.footer------------ */
-
-/* --やることリスト----------------- */
-
-body {
   font-family: 'Noto Sans JP', 'Noto Sans', sans-serif;
   background-color: #f9f9f9;
   color: #333;
   line-height: 1.8;
-  font-size: 16px;
-  padding: 40px 20px;
+  font-size: 1rem;
+  padding: 40px 20px 20px 20px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+header {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.header__logo {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+.header__logo img {
+  height: 32px;
+  width: auto;
+  margin-right: 10px;
+  vertical-align: middle;
 }
 
 .container {
@@ -107,7 +43,7 @@ body {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 1.5rem;
   border-bottom: 2px solid #ccc;
   padding-bottom: 10px;
   margin-bottom: 30px;
@@ -133,4 +69,19 @@ a {
 
 a:hover {
   color: #004999;
+}
+
+.footer {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #999;
+}
+
+.footer nav {
+  margin-bottom: 20px;
+}
+
+.footer span {
+  margin: 0 8px;
 }
